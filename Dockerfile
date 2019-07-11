@@ -1,5 +1,5 @@
-FROM alpine:3.5
-MAINTAINER Daniel Guerra
+FROM openjdk:8-jre-alpine
+MAINTAINER Szymon Stasik
 ADD /apk /apk
 RUN cp /apk/.abuild/-58b83ac3.rsa.pub /etc/apk/keys
 RUN apk --no-cache --update add /apk/x11vnc-0.9.13-r0.apk
